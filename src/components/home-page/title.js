@@ -1,36 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Container } from '@mui/material';
 import '../../styles.css';
 import Logo from '../pics/logo.png';
 import TransparentLogo from '../pics/transparentLogo.png';
+import { TitleInfoBox } from './info-box';
 
-export const Title = () => {
+export const Title = ({width}) => {
+  
+
   return (
     <Box>
       <Box className='title'>
-        <Box
-          component='img'
-          sx={{
-            height: 200,
-            width: 200,
-            borderRadius: 5,
-            boxShadow: 10,
-            ml: 20,
-            '@media (max-width: 1000px)': {
-              ml: 0,
-              // alignItems: 'center',
-            },
-            '@media (max-width: 500px)': {
-              ml: 0,
-              height: 175,
-              width: 175,
-            },
-            
-          }}
-          src={Logo}
-        ></Box>
+        <Box component='img' className='logo' src={Logo} />
+        {width > 1000 ? <TitleInfoBox /> : null}
       </Box>
-      <Container sx={{mt: 10}}>Hello</Container>
     </Box>
   );
 };

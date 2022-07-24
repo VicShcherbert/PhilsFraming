@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
 import { Title } from './components/home-page/title';
+import { DesktopNavBar, MobileNavBar } from './components/navbar';
 
 const App = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  });
   return (
     <Box>
-      <Title />
+      <Title width={width} />
+      {width > 1000 ? <DesktopNavBar /> : <MobileNavBar />}
     </Box>
   );
 };
