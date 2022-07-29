@@ -83,3 +83,19 @@ body {
   line-height: 30px;
   text-align: center;
 }
+
+.leftBox{
+  height: 250px;
+  width: 400px;
+  background-color: #59450e;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 50px;
+}
+
+.leftBoxText {
+  font-size: 25px;
+  text-align: left;
+  padding: 20px 0px 0px 15px;
+}

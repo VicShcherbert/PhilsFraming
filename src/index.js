@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
 import { Title } from './components/home-page/title';
 import { DesktopNavBar, MobileNavBar } from './components/navbar';
+import { AboutUs } from './components/body/about-us';
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -20,6 +21,7 @@ const App = () => {
     <Box>
       <Title width={width} />
       {width > 1000 ? <DesktopNavBar /> : <MobileNavBar />}
+      <AboutUs/>
     </Box>
   );
 };
