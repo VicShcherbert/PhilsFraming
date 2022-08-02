@@ -20,7 +20,8 @@ export const DesktopNavBar = () => {
             <Box
               color='inherit'
               sx={{
-                m: 1.5,
+                m: 2,
+                fontSize: 20,
                 '&:hover': {
                   backgroundColor: 'primary.main',
                   opacity: [0.9, 0.8, 0.7],
@@ -34,7 +35,8 @@ export const DesktopNavBar = () => {
             <Box
               color='inherit'
               sx={{
-                m: 1.5,
+                m: 2,
+                fontSize: 20,
                 '&:hover': {
                   backgroundColor: 'primary.main',
                   opacity: [0.9, 0.8, 0.7],
@@ -49,6 +51,7 @@ export const DesktopNavBar = () => {
               color='inherit'
               sx={{
                 m: 1.5,
+                fontSize: 20,
                 '&:hover': {
                   backgroundColor: 'primary.main',
                   opacity: [0.9, 0.8, 0.7],
@@ -63,6 +66,7 @@ export const DesktopNavBar = () => {
               color='inherit'
               sx={{
                 m: 1.5,
+                fontSize: 20,
                 '&:hover': {
                   backgroundColor: 'primary.main',
                   opacity: [0.9, 0.8, 0.7],
