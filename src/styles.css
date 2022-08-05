@@ -34,7 +34,7 @@ body {
     height: 175px;
     width: 175px;
   }
-  .leftBox{
+  .leftBox {
     margin-left: 0px;
   }
 }
@@ -47,9 +47,6 @@ body {
   }
   .title-box {
     pointer-events: none;
-  }
-  .leftBox{
-    margin-left: 400px;
   }
 }
 
@@ -91,25 +88,110 @@ body {
   text-align: center;
 }
 
-.leftBox{
-  height: 350px;
+.leftBox {
+  height: 770px;
   width: 500px;
   background-color: #534404;
   color: white;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-top: 50px;
-  /* margin-left: 500px; */
+  border-radius: 15px;
+  /* border-bottom-right-radius: 15px; */
+  margin-top: 34px;
+  justify-content: space-between;
+  margin-left: 15%;
+  box-shadow: 1px 0px 20px #342702;
 }
 
 .leftBoxHeader {
   font-size: 40px;
   text-align: left;
-  padding: 25px 0px 0px 20px;
+  padding: 40px 0px 0px 40px;
 }
 
 .leftBoxContent {
   font-size: 25px;
-  padding: 15px 20px 0px 20px;
+  padding: 20px 40px 0px 40px;
   line-height: 30px;
+}
+
+.photo1 {
+  height: 8in;
+  width: 12in;
+  margin-right: 15%;
+  float: right;
+  position: relative;
+  top: 35px;
+  border-radius: 15px;
+  box-shadow: 1px 0px 20px #342702;
+}
+
+.one-line {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo2 {
+  /* height: 8in;
+  width: 6in; */
+  height: 8in;
+  width: 12in;
+  position: relative;
+  top: 35px;
+  border-radius: 15px;
+  /* margin-left: 31.5%; */
+  margin-left: 15%;
+  box-shadow: 1px 0px 20px #342702;
+}
+/* .photo3{
+  height: 4in;
+  width: 3in;
+  position: relative;
+  top: 50px;
+  border-radius: 15px;
+  margin-left: 15%;
+  margin-top: 30px;
+  box-shadow: 1px 0px 20px #342702;
+} */
+
+.rightBox {
+  height: 770px;
+  width: 500px;
+  background-color: #534404;
+  color: white;
+  border-radius: 15px;
+  /* border-bottom-right-radius: 15px; */
+  margin-top: 34px;
+  justify-content: space-between;
+  margin-right: 15%;
+  box-shadow: 1px 0px 20px #342702;
+}
+
+.rightBoxHeader {
+  font-size: 40px;
+  text-align: left;
+  padding: 40px 0px 0px 40px;
+}
+
+.rightBoxContent {
+  font-size: 25px;
+  padding: 20px 40px 0px 40px;
+  line-height: 30px;
+}
+
+.contact {
+  margin-top: 120px;
+  width: 100%;
+  height: 200px;
+  background-color: #534404;
+  color: white;
+  border-radius: 10px;
+}
+
+.contact-box {
+  padding-top: 40px;
+}
+
+.contact-header {
+  font-size: 50px;
+  text-align: center;
 }
