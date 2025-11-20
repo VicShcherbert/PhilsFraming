@@ -14,8 +14,8 @@ import { Box, Container } from '@mui/system';
 export const DesktopNavBar = () => {
   return (
     <AppBar position='static' style={{ background: '#2E3B55' }}>
-      <Container sx={{ padding: 0 }}>
-        <Box sx={{ float: 'right', mr: 10 }}>
+      <Container sx={{marginRight: '15%'}}>
+        <Box sx={{ float: 'right' }}>
           <Toolbar disableGutters>
             <Box
               color='inherit'
@@ -28,7 +28,7 @@ export const DesktopNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#'  underline='none' color={'inherit'}>
                 Home
               </Link>
             </Box>
@@ -43,7 +43,7 @@ export const DesktopNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#about-us'  underline='none' color={'inherit'}>
                 About Us
               </Link>
             </Box>
@@ -58,7 +58,7 @@ export const DesktopNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#services'  underline='none' color={'inherit'}>
                 Services
               </Link>
             </Box>
@@ -73,7 +73,7 @@ export const DesktopNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#contact'  underline='none' color={'inherit'}>
                 Contact
               </Link>
             </Box>
@@ -100,7 +100,7 @@ export const MobileNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#'  underline='none' color={'inherit'}>
                 Home
               </Link>
             </Box>
@@ -114,7 +114,7 @@ export const MobileNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#about-us'  underline='none' color={'inherit'}>
                 About Us
               </Link>
             </Box>
@@ -132,7 +132,7 @@ export const MobileNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#services'  underline='none' color={'inherit'}>
                 Services
               </Link>
             </Box>
@@ -146,7 +146,7 @@ export const MobileNavBar = () => {
                 },
               }}
             >
-              <Link href=''  underline='none' color={'inherit'}>
+              <Link href='#contact'  underline='none' color={'inherit'}>
                 Contact
               </Link>
             </Box>

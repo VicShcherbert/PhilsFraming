@@ -50,6 +50,20 @@ body {
   }
 }
 
+@media (max-width: 1500px) {
+  .one-line {
+    /* width: 65%; */
+    margin: 0 auto;
+  }
+  .leftBoxContent {
+    font-size: 20px;
+  }
+  /* .photo1 {
+    height: 20%;
+    width: 20%;
+  } */
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -89,15 +103,15 @@ body {
 }
 
 .leftBox {
-  height: 770px;
-  width: 500px;
+  height: auto;
+  width: auto;
   background-color: #534404;
   color: white;
   border-radius: 15px;
-  /* border-bottom-right-radius: 15px; */
+  align-self: center;
   margin-top: 34px;
-  justify-content: space-between;
   margin-left: 15%;
+  margin-right: 40px;
   box-shadow: 1px 0px 20px #342702;
 }
 
@@ -111,57 +125,47 @@ body {
   font-size: 25px;
   padding: 20px 40px 0px 40px;
   line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .photo1 {
-  height: 8in;
-  width: 12in;
+  height: 4in;
+  width: 6in;
   margin-right: 15%;
   float: right;
-  position: relative;
-  top: 35px;
+  align-self: center;
   border-radius: 15px;
   box-shadow: 1px 0px 20px #342702;
 }
 
 .one-line {
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
-  justify-content: space-between;
+  /* flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center; */
 }
 
 .photo2 {
-  /* height: 8in;
-  width: 6in; */
-  height: 8in;
-  width: 12in;
-  position: relative;
-  top: 35px;
-  border-radius: 15px;
-  /* margin-left: 31.5%; */
+  height: 4in;
+  width: 6in;
   margin-left: 15%;
+  float: left;
+  align-self: center;
+  border-radius: 15px;
   box-shadow: 1px 0px 20px #342702;
 }
-/* .photo3{
-  height: 4in;
-  width: 3in;
-  position: relative;
-  top: 50px;
-  border-radius: 15px;
-  margin-left: 15%;
-  margin-top: 30px;
-  box-shadow: 1px 0px 20px #342702;
-} */
 
 .rightBox {
-  height: 770px;
-  width: 500px;
+  height: auto;
+  width: auto;
   background-color: #534404;
   color: white;
   border-radius: 15px;
-  /* border-bottom-right-radius: 15px; */
-  margin-top: 34px;
-  justify-content: space-between;
+  align-self: center;
+  margin-left: 40px;
   margin-right: 15%;
   box-shadow: 1px 0px 20px #342702;
 }
@@ -176,6 +180,7 @@ body {
   font-size: 25px;
   padding: 20px 40px 0px 40px;
   line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .contact {
@@ -192,6 +197,13 @@ body {
 }
 
 .contact-header {
+  margin-top: 10px;
   font-size: 50px;
+  text-align: center;
+}
+
+.designer-footer {
+  margin-top: 15px;
+  font-size: 15px;
   text-align: center;
 }

@@ -4,7 +4,7 @@ import Stairs1 from '../pics/Stairs1.jpg';
 
 export const AboutUs = () => {
   return (
-    <Box className='one-line'>
+    <Box className='one-line' id='about-us'>
       <Box className='leftBox'>
         <Box className='leftBoxHeader'>About Us</Box>
         <Box className='leftBoxContent'>

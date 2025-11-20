@@ -10,7 +10,7 @@ export const Title = ({width}) => {
     <Box>
       <Box className='title'>
         <Box component='img' className='logo' src={Logo} />
-        {width > 1000 ? <TitleInfoBox /> : null}
+        {/* {width > 1000 ? <TitleInfoBox /> : null} */}
       </Box>
     </Box>
   );
