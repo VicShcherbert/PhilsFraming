@@ -25,7 +25,7 @@ body {
   animation: fadeInAnimation ease 1s;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 701px) {
   .title {
     height: 30px;
   }
@@ -34,8 +34,61 @@ body {
     height: 175px;
     width: 175px;
   }
-  .leftBox {
-    margin-left: 0px;
+  body .leftBox {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 70px;
+  }
+
+  body .rightBox {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  body .leftBoxContent {
+    margin-bottom: 40px;
+  }
+
+  body .rightBoxContent {
+    /* margin-bottom: 40px; */
+    padding: 20px 40px 20px 40px;
+  }
+
+  .rightBoxHeader {
+    margin-top: 40px;
+  }
+
+  body .photo1 {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    float: none;
+    margin: auto;
+  }
+
+  body .photo2 {
+    display: none;
+  }
+
+  body .one-line {
+    display: block;
+  }
+
+  body .contact-header {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .photo1 {
+    max-width: 600px;
+    height: auto;
+  }
+  .photo2 {
+    max-width: 600px;
+    height: auto;
   }
 }
 
@@ -51,16 +104,29 @@ body {
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 702px) and (max-width: 1500px) {
   body .one-line {
     display: block;
-  } 
+  }
 
   body .leftBox {
     display: block;
     margin-right: 15%;
   }
-  
+
+  body .leftBoxContent {
+    margin-bottom: 40px;
+  }
+
+  body .rightBoxContent {
+    margin-bottom: 40px;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .rightBoxHeader {
+    margin-top: 40px;
+  }
+
   body .rightBox {
     display: block;
     margin-left: 15%;
@@ -125,10 +191,8 @@ body {
   align-self: center;
   margin-top: 34px;
   margin-left: 15%;
-  /* margin-right: 15%; */
   margin-right: 40px;
   box-shadow: 1px 0px 20px #342702;
-  /* display: block; */
 }
 
 .leftBoxHeader {
@@ -139,14 +203,11 @@ body {
 
 .leftBoxContent {
   font-size: 25px;
-  padding: 20px 40px 0px 40px;
+  padding: 20px 40px 20px 40px;
   line-height: 30px;
-  margin-bottom: 40px;
 }
 
 .photo1 {
-  height: 4in;
-  width: 6in;
   margin-right: 15%;
   float: right;
   align-self: center;
@@ -155,14 +216,14 @@ body {
 }
 
 .one-line {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  /* margin-bottom: 100px; */
   display: flex;
 }
 
 .photo2 {
-  height: 4in;
-  width: 6in;
+  /* height: 4in; */
+  /* width: 6in; */
   margin-left: 15%;
   float: left;
   align-self: center;
@@ -196,7 +257,7 @@ body {
 }
 
 .contact {
-  margin-top: 120px;
+  margin-top: 50px;
   width: 100%;
   height: 200px;
   background-color: #534404;
